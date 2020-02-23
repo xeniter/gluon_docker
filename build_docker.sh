@@ -1,4 +1,4 @@
 #!/bin/bash
-docker build -t limesdr-toolkit .
+docker build -t gluon-build-machine .
 
 

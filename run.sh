@@ -10,7 +10,6 @@ sudo docker run \
   -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
   -e DISPLAY=unix$DISPLAY \
   -u root \
-  -v /run/user/1000/pulse:/run/user/1000/pulse \
-  -v /home/nios/Desktop/LIME/limesdr_docker/mnt/:/root/ \
-  limesdr-toolkit:latest "$@"
+  -v /run/user/1000/pulse:/run/user/1000/pulse \  
+  gluon-build-machine:latest "$@"
 
